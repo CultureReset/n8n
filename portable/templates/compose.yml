@@ -1,0 +1,16 @@
+# component: @NAME@ — n8n 2.43.7 (observed live digest)
+name: ai-stack-n8n
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n@sha256:3db21366be1d3c77c1708963129c051948573019659e8873e0294be035ffc1b2
+    restart: unless-stopped
+    environment:
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?set in n8n.env}
+      N8N_HOST: ${N8N_HOST:-localhost}
+      N8N_PORT: "5678"
+      N8N_PROTOCOL: ${N8N_PROTOCOL:-http}
+      WEBHOOK_URL: ${WEBHOOK_URL:-http://localhost:5678/}
+      GENERIC_TIMEZONE: ${GENERIC_TIMEZONE:-UTC}
+    ports: ["127.0.0.1:5678:5678"]
+    volumes: [n8n-data:/home/node/.n8n]
+volumes: {n8n-data: {}}
