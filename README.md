@@ -1,3 +1,14 @@
+> **CultureReset fork of [n8n-io/n8n](https://github.com/n8n-io/n8n).** Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
+>
+> - **Why it is here:** Source reference for the workflow tool NODE uses for booking-email intake and automations.
+> - **Does anything run from it:** No. NODE runs the official n8n image, not a build of this fork.
+> - **Changes:** The default branch has no CultureReset commits; it is upstream as of the last sync.
+> - **License:** see upstream; this fork does not change it. For updates and issues, use [upstream](https://github.com/n8n-io/n8n).
+>
+> The upstream README follows unchanged.
+
+---
+
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
 # n8n – The Platform for AI Agents and Workflow Automation
